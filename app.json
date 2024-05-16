@@ -1,13 +1,14 @@
 {
   "expo": {
     "name": "TestingDeployment",
-    "slug": "TestingDeployment",
+    "slug": "testingdeployment",
     "version": "1.0.0",
     "extra": {
       "eas": {
-        "projectId": "3a899a79-d3b6-49ab-a347-cf65b648bc57"
+        "projectId": "8f8c6371-f97a-48ac-a55e-cf53202ffb67"
       }
-    }
+    },
+    "owner": "aaaaaadddsss"
   },
   "name": "TestingDeployment"
 }

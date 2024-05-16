@@ -2,10 +2,26 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from "../screens/homeScreen";
 import FutureScreen from "../screens/futureScreen";
 import { StyleSheet, Text, View, Image } from "react-native";
+import { useState, useEffect } from "react";
+import * as Font from "expo-font";
 
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
+  const [fontLoaded, setFontLoaded] = useState(false);
+
+  useEffect(() => {
+    const loadFont = async () => {
+      await Font.loadAsync({
+        BVPB: require("../assets/fonts/BeVietnamPro-Bold.ttf"),
+        BVPL: require("../assets/fonts/BeVietnamPro-ExtraLight.ttf"),
+        BVPBB: require("../assets/fonts/BeVietnamPro-ExtraBold.ttf"),
+      });
+      setFontLoaded(true);
+    };
+
+    loadFont();
+  }, []);
   return (
     <Tab.Navigator
       screenOptions={{
@@ -14,7 +30,7 @@ const Tabs = () => {
         tabBarStyle: [
           {
             position: "absolute",
-            bottom: 46,
+            bottom: 30,
             elevation: 0,
             left: 86,
             right: 86,
