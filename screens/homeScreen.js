@@ -144,11 +144,12 @@ const styles = StyleSheet.create({
     alignItems: "flex-end",
     marginTop: 35,
     marginRight: 15,
+    marginBottom: 15,
   },
   Text4: {
     fontFamily: "BVPB",
     color: "white",
-    fontSize: 22,
+    fontSize: 25,
   },
   Divider: {
     width: 352,
