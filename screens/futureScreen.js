@@ -18,19 +18,25 @@ export default function FutureScreen() {
             Your next <Text style={styles.Text5}> 100 </Text>
           </Text>
         </View>
-        <Text style={styles.Text6}> charge and discharge will be</Text>
-        <View style={styles.rectangle1}>
-          <Text style={styles.Text7}> Safe and No issue </Text>
-        </View>
+        <Text style={styles.Text6}>
+          {" "}
+          charge and discharge will be{" "}
+          <Text style={styles.Text5}> Safe and No Issue </Text>
+        </Text>
+        {/* <View style={styles.rectangle1}> */}
+        {/* <Text style={styles.Text7}> Safe and No issue </Text> */}
+        {/* </View> */}
       </View>
       <View style={styles.ThirdBox}>
         <Text style={styles.Text8}> Your battery's temperature </Text>
-        <Text style={styles.Text9}> from the past 24 hours is </Text>
-        <View style={styles.rectangle2}>
-          <Text style={styles.Text10}> Normal </Text>
-        </View>
+        <Text style={styles.Text9}>
+          {" "}
+          from the past 24 hours is <Text style={styles.Text5}> Normal </Text>
+        </Text>
+        {/* <View style={styles.rectangle2}> */}
+        {/* <Text style={styles.Text10}> Normal </Text> */}
+        {/* </View> */}
       </View>
-      <View style={styles.FourthBox}></View>
     </View>
   );
 }
